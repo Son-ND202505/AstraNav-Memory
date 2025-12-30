@@ -25,13 +25,6 @@ cd train_code
 pip install -r requirements.txt
 ```
 
-### ⚡ Inference
-● Goat-Bench
-``` python
-cd inference_code/hm3d-online
-python goat-nav_yaw.py
-```
-
 ### ⚡ Training
 ``` sh
 cd train_code
