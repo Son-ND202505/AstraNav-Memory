@@ -431,7 +431,6 @@ class Qwen2_5_VisionTransformerPretrainedModel(Qwen2_5_VLPreTrainedModel):
         self.compression_times = config.compression_times
         self.dino_from_pretrained = config.dino_from_pretrained
         self.dino_size = config.dino_size
-
         self.patch_embed = Qwen2_5_VisionPatchEmbed(
             patch_size=config.patch_size,
             temporal_patch_size=config.temporal_patch_size,
@@ -1723,17 +1722,6 @@ class Qwen2_5_VLForConditionalGeneration(Qwen2_5_VLPreTrainedModel, GenerationMi
             attentions=outputs.attentions,
             rope_deltas=outputs.rope_deltas,
         )
-    
-    # @classmethod
-    # def from_pretrained(cls,*args,**kwargs):
-    #     model = super().from_pretrained(*args, **kwargs)   
-
-    #     if model.patch_embed.dino is None:
-    #         model.patch_embed.dino = DINOv3ViTModel.from_pretrained("/home/renbotao.rbt/.cache/modelscope/hub/models/facebook/dinov3-vitb16-pretrain-lvd1689m")
-    #         if vision_config.dino_freeze:
-    #             for p in model.patch_embed.dino.parameters():
-    #                 p.requires_grad = False
-    #             model.patch_embed.dino.eval()
 
     def prepare_inputs_for_generation(
         self,

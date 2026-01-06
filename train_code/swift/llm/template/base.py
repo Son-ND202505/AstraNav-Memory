@@ -82,7 +82,6 @@ class Template(ProcessorMixin):
         response_prefix: Optional[str] = None,
         enable_thinking: Optional[bool] = None,
         add_non_thinking_prefix: bool = True,
-
         # rbt newly add
         use_compression: bool = False,
         compression_times: int = 1,
@@ -152,18 +151,10 @@ class Template(ProcessorMixin):
         self.use_megatron = False
         self._handles = []
         self._deepspeed_initialize = None
-
         if processor is not None:
             self.init_processor(processor)
         # rbt modified
         self.dino_size = dino_size
-        # self.use_compression = use_compression
-        # self.compression_times = compression_times
-        # if processor is not None:
-        #     if self.use_compression:
-        #         self.processor = DINOv3ViTImageProcessorFast()
-        #     else:
-        #         self.init_processor(processor)
 
     def init_env_args(self):
         if self.model_meta.is_multimodal:

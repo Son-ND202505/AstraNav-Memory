@@ -461,7 +461,6 @@ def get_model_tokenizer_with_flash_attn(model_dir: str,
     kwargs['model_config'] = model_config
     return get_model_tokenizer_from_local(model_dir, model_info, model_kwargs, load_model, **kwargs)
 
-
 def get_model_tokenizer_multimodal(model_dir: str, *args, **kwargs):
     from transformers import AutoProcessor
     # rbt modified
@@ -476,7 +475,6 @@ def get_model_tokenizer_multimodal(model_dir: str, *args, **kwargs):
     kwargs['tokenizer'] = processor.tokenizer
     model, _ = get_model_tokenizer_with_flash_attn(model_dir, *args, **kwargs)
     return model, processor
-
 
 def get_model_tokenizer_reward_model(model_dir, *args, **kwargs):
     model_config = AutoConfig.from_pretrained(model_dir, trust_remote_code=True)

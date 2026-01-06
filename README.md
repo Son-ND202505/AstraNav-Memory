@@ -4,10 +4,10 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2512.21627-b31b1b.svg?logo=arXiv)](https://www.arxiv.org/abs/2512.21627)
 
 ## 🔥 Latest News!!
-* December 30, 2025: We release the training code.
+* December 30, 2025: We release the training and inference code.
 
 ## Coming Soon
-* The inference code and the checkpoint.
+* The inference checkpoint.
 
 ## Quickstart
 ### 🧰 Installation
@@ -23,6 +23,34 @@ Install Training dependencies:
 # Ensure torch >= 2.6.0
 cd train_code
 pip install -r requirements.txt
+```
+
+Install habitat-sim and habitat-lab for inference
+```
+● habitat-sim
+git clone https://github.com/facebookresearch/habitat-sim.git && cd habitat-sim && git checkout v0.2.3
+pip install -r requirements.txt
+python setup.py install --headless
+● habitat-lab
+git clone https://github.com/chongchong2025/habitat-lab && cd habitat-lab && git checkout v0.2.3_waypoint
+python -m pip install -r habitat-baselines/habitat_baselines/rl/requirements.txt
+python -m pip install -r habitat-baselines/habitat_baselines/rl/ddppo/requirements.txt
+pip install -e .
+cd habitat-baselines
+pip install -e .
+```
+
+### ⚡ Inference
+● Goat-Bench
+``` python
+cd inference_code/hm3d-online
+python goat-nav.py
+```
+
+● OVON
+``` python
+cd inference_code/hm3d-online
+python ovon-nav.py
 ```
 
 ### ⚡ Training

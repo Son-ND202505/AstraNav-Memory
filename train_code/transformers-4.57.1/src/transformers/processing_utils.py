@@ -1196,7 +1196,6 @@ class ProcessorMixin(PushToHubMixin):
         # instantiate processor with used (and valid) kwargs only
         # rbt modified
         processor = cls(*args, **kwargs)
-
         logger.info(f"Processor {processor}")
         if return_unused_kwargs:
             return processor, unused_kwargs

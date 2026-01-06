@@ -97,12 +97,6 @@ class Qwen2_5_VLProcessor(ProcessorMixin):
             else tokenizer.convert_tokens_to_ids(self.video_token)
         )
         self.dino_processor_initialized = False
-        # self.use_compression = kwargs.get("use_compression", True)
-        # self.compression_times = kwargs.get("compression_times", 2)
-        # self.dino_size = kwargs.get("dino_size", "vitb16")
-        # self.dino_processor_initialized = False
-        # self.dino_from_pretrained = kwargs.get("dino_from_pretrained", "/home/renbotao.rbt/.cache/modelscope/hub/models/facebook/dinov3-vitb16-pretrain-lvd1689m")
-        # self.dino_freeze = kwargs.get("dino_freeze", True)
         super().__init__(image_processor, tokenizer, video_processor, chat_template=chat_template)
 
     # rbt modified

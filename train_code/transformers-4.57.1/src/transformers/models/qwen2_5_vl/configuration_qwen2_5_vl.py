@@ -74,7 +74,6 @@ class Qwen2_5_VLVisionConfig(PretrainedConfig):
         self.fullatt_block_indexes = fullatt_block_indexes
         self.out_hidden_size = out_hidden_size
         self.initializer_range = initializer_range
-
         # rbt newly add
         self.use_compression = use_compression
         self.compression_times = compression_times
