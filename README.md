@@ -3,8 +3,37 @@
 [![Home Page](https://img.shields.io/badge/Project-AstraNav_Memory-blue.svg)](https://astra-amap.github.io/AstraNav-Memory.github.io/)
 [![arXiv](https://img.shields.io/badge/Arxiv-2512.21627-b31b1b.svg?logo=arXiv)](https://www.arxiv.org/abs/2512.21627)
 
+## 🌐 Astra Ecosystem
+AstraNav-Memory is part of the **Astra** series for robust embodied intelligence:
+*   **AstraNav-Memory (This Repo):** Focuses on long-term implicit memory through visual context compression.
+*   **[AstraNav-World](https://github.com/amap-cvlab/AstraNav-World):** Focuses on predictive planning via tightly coupled visual foresight and action generation.
+*   **[OmniNav](https://github.com/amap-cvlab/OmniNav):** Focuses on unified multi-paradigm navigation and real-time execution via a fast-slow system.
+
+
+## Core Highlights
+🤏 20× Visual Context Compression: Employs a lightweight PixelUnshuffle+Conv tokenizer to compress frames into ~30 tokens, expanding context capacity from tens to hundreds of images for massive, long-term implicit memory.
+
+🎞️ Qwen-DINO Unified Policy: Couples Qwen2.5-VL reasoning with frozen DINOv3 features in an end-to-end framework, replacing fragile object-centric pipelines with a robust, scalable image-centric memory interface.
+
+🗺️ Lifelong Navigational Mastery: Sets new SOTA benchmarks on GOAT-Bench and HM3D-OVON by balancing efficient exploration in novel environments with optimal, high-speed pathfinding in familiar ones.
+
+
+### Image-Centric Memory
+
+<div align="center">
+    <img src="assets/memory.jpg" width="800">
+</div>
+
+
+### Compression Method
+
+<div align="center">
+    <img src="assets/model.jpg" width="800">
+</div>
+
 ## 🔥 Latest News!!
 * December 30, 2025: We release the training and inference code.
+
 
 ## Coming Soon
 * The inference checkpoint.

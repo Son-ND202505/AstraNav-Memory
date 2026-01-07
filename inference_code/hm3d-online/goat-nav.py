@@ -276,12 +276,12 @@ for split in split_list:
                 if is_final_decision:
                     log_message('subgoal complete___________________________________________________________\n',log_file_path,timestamp)
                     break   
-                color_past=goto_color_list[-1]
-                agent_past=goto_agent_state_list[-1]
                 if goto_color_list==[]:
                     print(' no goto_color_list')
-                    log_message(' no goto_color_list')
+                    # log_message(' no goto_color_list')
                     break 
+                color_past=goto_color_list[-1]
+                agent_past=goto_agent_state_list[-1]
             agent_state = agent.get_state()
             view_points = [
                         view_point["agent_state"]["position"]
@@ -336,9 +336,9 @@ for split in split_list:
         total_sr += result['sr']
         total_spl += result['spl']
         category = result['object_category']
-        category_sr_spl[category]['sr'] += result['sr']
-        category_sr_spl[category]['spl'] += result['spl']
-        category_sr_spl[category]['count'] += 1
+        # category_sr_spl[category]['sr'] += result['sr']
+        # category_sr_spl[category]['spl'] += result['spl']
+        # category_sr_spl[category]['count'] += 1
 
     avg_sr = total_sr / len(result_dict[split])
     avg_spl = total_spl / len(result_dict[split])
