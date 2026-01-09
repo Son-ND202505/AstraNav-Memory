@@ -10,7 +10,7 @@ def process_vision_info(colorlist):
     for image in colorlist:
         # for pixel_values in image['image']:    
             image = Image.fromarray(image)
-            image = image.resize((486,420))
+            image = image.resize((720,640))
             image_inputs.append(image)
                         
     
