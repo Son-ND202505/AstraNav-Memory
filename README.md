@@ -69,13 +69,19 @@ cd habitat-baselines
 pip install -e .
 ```
 
-### 🎁 Model
-| Models          |                       Download Link                                           |
-|-----------------|-------------------------------------------------------------------------------|
-| DS16-Context50  | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context50)
-| DS16-Context100 | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context100)
-| DS4-Context100  | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds4_context100)
-| DS64-Context100 | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds64_context100)
+[//]: # (### 🎁 Model)
+
+[//]: # (| Models          |                       Download Link                                           |)
+
+[//]: # (|-----------------|-------------------------------------------------------------------------------|)
+
+[//]: # (| DS16-Context50  | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context50&#41;)
+
+[//]: # (| DS16-Context100 | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context100&#41;)
+
+[//]: # (| DS4-Context100  | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds4_context100&#41;)
+
+[//]: # (| DS64-Context100 | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds64_context100&#41;)
 
 
 ### ⚡ Inference
