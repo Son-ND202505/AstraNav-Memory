@@ -32,8 +32,8 @@ AstraNav-Memory is part of the **Astra** series for robust embodied intelligence
 </div>
 
 ## 🔥 Latest News!!
-* December 30, 2025: We release the training and inference code.
 * January 20, 2026: We release the inference checkpoints with various downsampling rates and context lengths.
+* December 30, 2025: We release the training and inference code.
 
 
 
