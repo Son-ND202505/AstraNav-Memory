@@ -110,7 +110,7 @@ for split in split_list:
 
 
         # visited frontier
-        bank=Bank(goto_sample_interval=1)
+        bank=Bank(goto_sample_interval=4)
         color_past=None
         agent_past=None
         name_list=[]
