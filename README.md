@@ -33,7 +33,7 @@ AstraNav-Memory is part of the **Astra** series for robust embodied intelligence
 
 ## 🔥 Latest News!!
 
-[//]: # (* January 20, 2026: We release the inference checkpoints with various downsampling rates and context lengths.)
+* January 20, 2026: We release the inference checkpoints with various downsampling rates and context lengths.
 * December 30, 2025: We release the training and inference code.
 
 
@@ -69,19 +69,13 @@ cd habitat-baselines
 pip install -e .
 ```
 
-[//]: # (### 🎁 Model)
-
-[//]: # (| Models          |                       Download Link                                           |)
-
-[//]: # (|-----------------|-------------------------------------------------------------------------------|)
-
-[//]: # (| DS16-Context50  | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context50&#41;)
-
-[//]: # (| DS16-Context100 | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context100&#41;)
-
-[//]: # (| DS4-Context100  | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds4_context100&#41;)
-
-[//]: # (| DS64-Context100 | [ModelScope]&#40;https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds64_context100&#41;)
+### 🎁 Model
+| Models          |                       Download Link                                           |
+|-----------------|-------------------------------------------------------------------------------|
+| DS16-Context50  | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context50)
+| DS16-Context100 | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds16_context100)
+| DS4-Context100  | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds4_context100)
+| DS64-Context100 | [ModelScope](https://www.modelscope.ai/models/chongchongjj/AstraNav_Memory_ds64_context100)
 
 
 ### ⚡ Inference
