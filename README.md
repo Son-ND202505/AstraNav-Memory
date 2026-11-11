@@ -1,3 +1,7 @@
+> **This fork adds a MuJoCo demo:** AstraNav-Memory drives a Unitree G1 humanoid through two furnished houses.
+> Setup and commands: [astranav_bench/README.md](astranav_bench/README.md) (needs mujoco_g1_nav of https://github.com/Son-ND202505/OVSegDT).
+> Everything below is the original README.
+
 # AstraNav-Memory: Contexts Compression for Long Memory
 
 [![Home Page](https://img.shields.io/badge/Project-AstraNav_Memory-blue.svg)](https://astra-amap.github.io/AstraNav-Memory.github.io/)

@@ -1,0 +1,10 @@
+# AstraNav model server: runs with the python of the MuJoCo environment (mujoco_g1_nav/requirements.txt of the OVSegDT fork) plus the vendored
+# transformers of this repo (train_code/transformers-4.57.1/src, put on PYTHONPATH by the demo). That transformers needs older hub / tokenizers,
+# installed into astranav_bench/pylibs (also put first on PYTHONPATH by the demo):
+#   pip install --target astranav_bench/pylibs huggingface_hub==0.36.2 tokenizers==0.22.2
+regex
+tqdm
+packaging
+filelock
+requests
+modelscope        # only to download the original weights (scripts/download_weights.sh)

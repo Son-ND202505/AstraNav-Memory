@@ -1,0 +1,10 @@
+astranav_bench - AstraNav-Memory adapter for the MuJoCo Unitree G1 houses
+Copyright 2026 Nguyen Duc Son (Nguyễn Đức Sơn)
+Licensed under the Apache License, Version 2.0 (LICENSE in this folder). The license covers the files of this folder only.
+
+Third-party material:
+- AstraNav-Memory (everything outside astranav_bench/): by its original authors, https://github.com/amap-cvlab/AstraNav-Memory ;
+  that repository publishes no top-level license (train_code/ carries its own), its terms are those of its authors.
+- Weights: the original ds16_context100 weights are downloaded from the authors' ModelScope page; the fine-tune (astranav_g1_ft.pt) is derived
+  from them (Qwen2.5-VL-3B + DINOv3 based); its use is subject to the licenses of those models.
+- The MuJoCo houses, the robot and the evaluation code come from mujoco_g1_nav of the OVSegDT fork (Apache-2.0, see its NOTICE).

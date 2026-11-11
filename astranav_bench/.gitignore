@@ -1,0 +1,6 @@
+__pycache__/
+/outputs
+/pylibs
+weights/*
+!weights/.gitkeep
+*.mp4

@@ -149,3 +149,6 @@ megatron_output/
 
 # ast template
 ast_index_file.py
+
+# MuJoCo demo: symlink to mujoco_g1_nav of the OVSegDT fork
+/mujoco_g1_nav
